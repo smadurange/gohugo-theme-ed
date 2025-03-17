@@ -13,26 +13,6 @@ function setupBackToTop() {
   }
 }
 
-// Annotation support
-function setupHypothes() {
-  const hypothesisContainer = document.querySelector('.hypothesis-container');
-  if (hypothesisContainer !== null) {
-    hypothesisContainer.addEventListener('click', e => {
-      e.preventDefault();
-
-      let script = document.createElement('script');
-      script.setAttribute('src', 'https://cdn.hypothes.is/hypothesis');
-      script.type = 'text/javascript';
-      document.getElementsByTagName('head')[0].appendChild(script);
-    });
-  }
-
-  const hypothesisLink = document.querySelector('#hypothesis-link');
-  if (hypothesisLink !== null) {
-    hypothesisContainer.addEventListener('click', e => e.preventDefault());
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   setupBackToTop();
   setupHypothes();

@@ -22,10 +22,6 @@
             </a>
         {{- end }}
 
-        {{- if ne .Params.annotations false }}
-        {{ partial "hypothesis.html" . }}
-        {{- end }}
-
         {{- with site.Menus.feeds }}
             <div class="sidebar-nav-item">
                 {{- range $i, $ := site.Menus.feeds }}
