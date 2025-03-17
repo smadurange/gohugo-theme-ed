@@ -18,7 +18,7 @@
 # here, but we recommend using the Netlify UI for sensitive
 # values to keep them out of your source repository.
 [context.production]
-  command = 'hugo --source=exampleSite --baseURL ${URL} --destination ../public --minify; cp google68c3edfdb3673ddb.html ./public'
+  command = 'hugo --source=exampleSite --baseURL ${URL} --destination ../public --minify;'
 
 [context.production.environment]
   HUGO_ENV = 'production'
@@ -88,11 +88,9 @@
     # (including inline scripts and event-handling HTML attributes).
     Content-Security-Policy = """
     default-src 'self';
-    script-src 'self' www.googletagmanager.com giscus.app;
+    script-src 'self' giscus.app;
     style-src 'self' giscus.app;
-    img-src 'self' data: *.google-analytics.com www.googletagmanager.com www.gstatic.com stats.g.doubleclick.net;
     font-src 'self';
-    connect-src 'self' *.google-analytics.com *.analytics.google.com analytics.google.com www.googletagmanager.com stats.g.doubleclick.net;
     media-src 'self';
     object-src 'self';
     frame-src giscus.app;
