@@ -15,5 +15,4 @@ function setupBackToTop() {
 
 document.addEventListener('DOMContentLoaded', () => {
   setupBackToTop();
-  setupHypothes();
 });
