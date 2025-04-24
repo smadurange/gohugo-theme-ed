@@ -789,3 +789,30 @@ li.prose-indent {
 .theme-base-brown .related-posts li a:hover {
   color: #8f5536;
 }
+
+.posts-table {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.posts-tr {
+  border: none;
+  background-color: transparent;
+}
+
+.posts-td-time {
+  border: none;
+  background-color: transparent !important;
+  width: 1%;
+  white-space: nowrap;
+  padding:0 5px 0 0;
+  vertical-align: top;
+}
+
+.posts-td-link {
+  border: none;
+  background-color: transparent !important;
+  padding:0 0 0 0;
+  vertical-align:top;
+}

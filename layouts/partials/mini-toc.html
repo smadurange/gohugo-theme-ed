@@ -13,12 +13,12 @@
 
     <div class="toc" role="navigation">
         <h2>{{ i18n "latest_publications" }}</h2>
-        <ul class="texts">
+        <table class="texts posts-table">
             {{/* Range through the first $maxPosts items of the $section */}}
             {{ range (first $maxPosts $section) }}
-                <li class="text-title">
+                <tr class="text-title posts-tr">
                     {{ partial "post-toc-summary" . }}
-                </li>
+                </tr>
             {{ end }}
         </ul>
     </div>
