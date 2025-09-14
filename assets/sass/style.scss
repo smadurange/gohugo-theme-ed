@@ -26,3 +26,9 @@ $link-color: #841212;
 @import "form-elements";
 @import "customize";
 @import "themes";
+
+/* Code */
+pre {
+  max-height: 400px;
+  overflow-y: auto;
+}
