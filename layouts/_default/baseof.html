@@ -23,9 +23,15 @@
                 </div>
             </header>
 
-            <main class="container content" id="main">
-                {{ block "main" . }}{{ end }}
-            </main>
+            {{ if (eq .Params.semanticType "projects") }}
+                <main class="container container-wide content" id="main">
+                    {{ block "main" . }}{{ end }}
+                </main>
+            {{ else }}
+                <main class="container content" id="main">
+                    {{ block "main" . }}{{ end }}
+                </main>
+            {{- end -}}
         </div>
 
         <label for="sidebar-checkbox" class="sidebar-toggle"></label>
